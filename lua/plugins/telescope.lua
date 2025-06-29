@@ -1,0 +1,18 @@
+-- ~/.config/nvim/lua/plugins/telescope.lua
+
+return {
+  "nvim-telescope/telescope.nvim",
+  opts = {
+    defaults = {
+      hidden = true, -- tampilkan dotfiles
+      no_ignore = true, -- abaikan aturan .gitignore
+      file_ignore_patterns = { "node_modules", "vendor", ".git" },
+    },
+    pickers = {
+      find_files = {
+        hidden = true,
+        no_ignore = true,
+      },
+    },
+  },
+}

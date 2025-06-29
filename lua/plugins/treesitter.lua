@@ -1,0 +1,28 @@
+return {
+  "nvim-treesitter/nvim-treesitter",
+  branch = "master",
+  lazy = false,
+  build = ":TSUpdate",
+  opts = {
+    ensure_installed = {
+      "php",
+      "javascript",
+      "sql",
+      "python",
+      "typescript",
+      "vue",
+      "css",
+      "json5",
+      "rust",
+      "ron",
+      "go",
+      "gomod",
+      "gowork",
+      "gosum",
+      "scss",
+      -- "http",
+      -- "graphlql",
+      -- "prettier",
+    },
+  },
+}
