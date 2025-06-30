@@ -23,6 +23,7 @@ return {
       "trivy",
       "typescript-language-server",
       "js-debug-adapter",
+      "sqlfluff",
     },
   },
 }
