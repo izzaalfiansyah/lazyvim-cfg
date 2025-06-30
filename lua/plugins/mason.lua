@@ -11,9 +11,7 @@ return {
       "intelephense",
       "lua-language-server",
       "php-cs-fixer",
-      "phpactor",
-      "phpstan",
-      "pint",
+      "phpcs",
       "prettier",
       "prisma-language-server",
       "quick-lint-js",
@@ -24,6 +22,7 @@ return {
       "tailwindcss-language-server",
       "trivy",
       "typescript-language-server",
+      "js-debug-adapter",
     },
   },
 }
