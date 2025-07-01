@@ -17,7 +17,7 @@ return {
       "quick-lint-js",
       "rustywind",
       "shfmt",
-      "stimulus-language-server",
+      -- "stimulus-language-server",
       "stylua",
       "tailwindcss-language-server",
       "trivy",

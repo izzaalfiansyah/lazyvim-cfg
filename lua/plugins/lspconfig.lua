@@ -1,4 +1,4 @@
-local lsp = vim.g.preferred_php_lsp or "intelephense"
+local lsp = vim.g.preferred_php_lsp or "phpactor"
 
 return {
   "neovim/nvim-lspconfig",
