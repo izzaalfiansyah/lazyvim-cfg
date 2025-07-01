@@ -14,7 +14,7 @@ vim.keymap.set("n", "<leader><space>", function()
 end, { desc = "Find files (include dotfiles & ignored)" })
 
 vim.keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode with jk" })
-vim.keymap.set("v", "jk", "<Esc>", { desc = "Exit visual mode with jk" })
+-- vim.keymap.set("v", "jk", "<Esc>", { desc = "Exit visual mode with jk" })
 vim.keymap.set("t", "jk", [[<C-\><C-n>]], { desc = "Exit terminal mode with jk", noremap = true, silent = true })
 vim.keymap.set("i", "..", "->", { desc = "Type -> in insert mode", noremap = true })
 vim.keymap.set("i", ";;", "=>", { desc = "Type => in insert mode", noremap = true })
