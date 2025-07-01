@@ -24,7 +24,6 @@ return {
       "typescript-language-server",
       "js-debug-adapter",
       "sqlfluff",
-      "prettier-php",
     },
   },
 }
