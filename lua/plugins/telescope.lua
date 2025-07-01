@@ -6,7 +6,7 @@ return {
     defaults = {
       hidden = true, -- tampilkan dotfiles
       no_ignore = true, -- abaikan aturan .gitignore
-      file_ignore_patterns = { "node_modules", "vendor", ".git" },
+      file_ignore_patterns = { "node_modules", "vendor", ".git", "storage" },
     },
     pickers = {
       find_files = {
