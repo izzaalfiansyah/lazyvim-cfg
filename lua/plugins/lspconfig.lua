@@ -1,4 +1,5 @@
 local lsp = vim.g.preferred_php_lsp or "phpactor"
+local ruff = vim.g.lazyvim_python_ruff or "ruff"
 
 return {
   "neovim/nvim-lspconfig",
@@ -139,6 +140,30 @@ return {
           },
         },
       },
+      ruff = {
+        cmd_env = { RUFF_TRACE = "messages" },
+        init_options = {
+          settings = {
+            logLevel = "error",
+          },
+        },
+        keys = {
+          {
+            "<leader>co",
+            LazyVim.lsp.action["source.organizeImports"],
+            desc = "Organize Imports",
+          },
+        },
+      },
+      ruff_lsp = {
+        keys = {
+          {
+            "<leader>co",
+            LazyVim.lsp.action["source.organizeImports"],
+            desc = "Organize Imports",
+          },
+        },
+      },
     },
     setup = {
       --- @deprecated -- tsserver renamed to ts_ls but not yet released, so keep this for now
@@ -232,6 +257,12 @@ return {
 
         -- Add additional filetypes
         vim.list_extend(opts.filetypes, opts.filetypes_include or {})
+      end,
+      [ruff] = function()
+        LazyVim.lsp.on_attach(function(client, _)
+          -- Disable hover in favor of Pyright
+          client.server_capabilities.hoverProvider = false
+        end, ruff)
       end,
     },
   },

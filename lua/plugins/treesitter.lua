@@ -20,6 +20,8 @@ return {
       "gowork",
       "gosum",
       "scss",
+      "ninja",
+      "rst",
       -- "http",
       -- "graphlql",
       -- "prettier",
