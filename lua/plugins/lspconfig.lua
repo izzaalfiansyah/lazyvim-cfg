@@ -1,4 +1,4 @@
-local lsp = vim.g.preferred_php_lsp or "phpactor"
+local lsp = vim.g.preferred_php_lsp or "intelephense"
 local ruff = vim.g.lazyvim_python_ruff or "ruff"
 
 return {
