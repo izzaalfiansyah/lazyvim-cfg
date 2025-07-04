@@ -16,9 +16,9 @@ vim.keymap.set("n", "<leader><space>", function()
 end, { desc = "Find files (include dotfiles & ignored)" })
 
 -- Exit insert, visual, and terminal mode using jk
-vim.keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode with jk" })
-vim.keymap.set("v", "jk", "<Esc>", { desc = "Exit visual mode with jk" })
-vim.keymap.set("t", "jk", [[<C-\><C-n>]], { desc = "Exit terminal mode with jk", noremap = true, silent = true })
+-- vim.keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode with jk" })
+-- vim.keymap.set("v", "jk", "<Esc>", { desc = "Exit visual mode with jk" })
+-- vim.keymap.set("t", "jk", [[<C-\><C-n>]], { desc = "Exit terminal mode with jk", noremap = true, silent = true })
 
 -- Keymap for set attribute from object and set array on php
 vim.keymap.set("i", "..", "->", { desc = "Type -> in insert mode", noremap = true })
