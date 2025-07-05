@@ -3,7 +3,7 @@
 -- Add any additional options here
 local opt = vim.opt
 
-vim.g.lazyvim_php_lsp = "phpactor"
+vim.g.lazyvim_php_lsp = "intelephense"
 vim.g.lazyvim_python_lsp = "pyright"
 vim.g.lazyvim_python_ruff = "ruff"
 
