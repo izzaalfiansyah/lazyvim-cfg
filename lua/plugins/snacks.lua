@@ -4,6 +4,14 @@ return {
     explorer = {
       enabled = true,
       auto_close = true, -- disable auto-close when focus shifts
+      hidden = true,
+      ignore = true,
+      sources = {
+        files = {
+          hidden = true,
+          ignored = true,
+        },
+      },
       -- other explorer options...
     },
     -- optionally configure picker behaviors:
