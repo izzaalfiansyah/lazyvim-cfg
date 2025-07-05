@@ -1,7 +1,7 @@
 return {
   "saghen/blink.cmp",
   -- optional: provides snippets for the snippet source
-  dependencies = { "rafamadriz/friendly-snippets", "codeium.nvim", "saghen/blink.compat" },
+  dependencies = { "rafamadriz/friendly-snippets", "codeium.nvim", "saghen/blink.compat", "L3MON4D3/LuaSnip" },
 
   -- use a release tag to download pre-built binaries
   version = "1.*",
@@ -26,9 +26,12 @@ return {
     --
     -- See :h blink-cmp-config-keymap for defining your own keymap
     keymap = {
-      preset = "default",
-      ["<Tab>"] = { "select_and_accept" },
+      preset = "super-tab",
+      ["<Tab>"] = { "snippet_forward", "select_and_accept", "fallback" },
+      ["<S-Tab>"] = { "snippet_backward", "select_prev", "fallback" },
     },
+
+    snippets = { preset = "luasnip" },
 
     appearance = {
       -- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
