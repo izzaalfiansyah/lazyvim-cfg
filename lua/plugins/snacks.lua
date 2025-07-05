@@ -5,7 +5,7 @@ return {
       enabled = true,
       auto_close = true, -- disable auto-close when focus shifts
       hidden = true,
-      ignore = true,
+      ignored = true,
       sources = {
         files = {
           hidden = true,
@@ -20,7 +20,8 @@ return {
         explorer = {
           auto_close = true, -- if you launch it via picker
           focus = "list", -- ensure it stays focused
-          -- other layout/actions...
+          hidden = true,
+          ignored = true,
         },
       },
     },
